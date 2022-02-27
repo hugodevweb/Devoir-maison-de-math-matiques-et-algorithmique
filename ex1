@@ -1,0 +1,12 @@
+#Exercice 1
+
+def remboursement(montant,smr):
+    if smr == "indispensable" :
+        montant = montant - 0.50
+    elif smr == "majeur" or smr == "important":
+        montant = montant* 0.65 - 0.5
+    elif smr == "modéré":
+        montant = montant* 0.3 - 0.5
+    elif smr == "faible" :
+        montant = montant * 0.15 -0.5
+    return (montant)
